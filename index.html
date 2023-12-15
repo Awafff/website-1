@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>موقعي</title>
+</head>
+<body>
+
+    <header>
+        <h1>فهد</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عن الموقع</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>مرحبًا بك في صفحة الرئيسية</h2>
+            <p>منور يسطا موقع تحت تطوير للاسف</p>
+        </section>
+
+        <section id="about">
+            <h2>موقع تست</h2>
+            <p>منور.</p>
+        </section>
+
+        <section id="contact">
+            <h2>اتصل بنا</h2>
+          <p>الايميل خاص بناyhhhy19@gmail.com:</p>
+         <--ضافة نموذج الاتصال هنا-->
+        </section>
+    </main>
+
+    <footer>
+        <p>حقوق الطبع والنشر © 2023</p>
+    </footer>
+
+</body>
+</html>
+ <section id="login">
+        <h2>تسجيل الدخول</h2>
+        <form action="login.php" method="POST">
+            <label for="username">اسم المستخدم:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+    </section>
+
+    <!-- ... الأكواد الباقية ... -->
+
+</body>
+</html>
+<section id="dashboard">
+        <h2>لوحة التحكم</h2>
+        <p>مرحبًا بك، <?php echo isset($_SESSION["username"]) ? $_SESSION["username"] : "زائر"; ?>!</p>
+    </section>
+
+    <!-- ... الأكواد الباقية ... -->
+
+</body>
+</html>
